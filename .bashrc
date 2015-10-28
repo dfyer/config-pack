@@ -1,6 +1,6 @@
 PS1='\[\e[0;31m\]\u\[\e[m\]\[\e[0;33m\]@\h\[\e[m\]:\[\e[1;36m\]\w\[\e[m\]\[\e[1;31m\] \$\[\e[m\] '
 alias tree='tree -C'
-alias ls='ls --color=always'
+alias ls='ls -G'
 alias lf='ls -F'
 alias la='ls -larth'
 alias grep='grep --color=auto'

@@ -1,3 +1,9 @@
-# Configuration Pack v0.5
+# Configuration Pack v0.7
 
-Smyck.terminal: for Mac OS X Basic Terminal
+Copy the configuration files (.bashrc, .bash__profile, .screenrc, .vimrc
+
+> . config.sh
+
+For Mac OS X Basic Terminal,
+
+> . Smyck.terminal
