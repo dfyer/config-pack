@@ -7,8 +7,6 @@ Python 2.7 required. If you are using Python version 3.0 or above, use py3config
 
 > $ python config.py
 
-> Are you using Mac OS X? (y/n): _
-
 2. Setup Vundle
 
 > $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
