@@ -1,4 +1,4 @@
-# Configuration Pack v0.9
+# Configuration Pack v0.9.1
 
 Python 2.7 required. If you are using Python version 3.0 or above, use py3config.py
 

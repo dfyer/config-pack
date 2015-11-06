@@ -25,3 +25,5 @@ print "Copying .screenrc ...Complete"
 os.system("cp vimrc ~/.vimrc")
 print "Copying .vimrc ...Complete"
 
+os.system("git config --global color.ui true")
+print "git config --global color.ui true"
