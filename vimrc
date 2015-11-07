@@ -37,8 +37,6 @@ Plugin 'gmarik/Vundle.vim'
 
 " a Git wrapper so awesome, it should be illegal
 Plugin 'tpope/vim-fugitive'
-" squoting/parenthesizing made simple
-Plugin 'tpope/vim-surround'
 " :A to switch header/source
 Plugin 'a.vim'
 " :FixWhitespace
