@@ -41,8 +41,6 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'a.vim'
 " :FixWhitespace
 Plugin 'bronson/vim-trailing-whitespace'
-" Fuzzy file, buffer, mru, tag, etc finder.
-Plugin 'kien/ctrlp.vim'
 " Vim plugin for the_silver_searcher, 'ag'
 Plugin 'rking/ag.vim'
 " Syntax checker
@@ -75,11 +73,6 @@ filetype plugin indent on       " required
 " set t_Co=256
 " alias for FixWhitespace
 :command F FixWhitespace
-" CtrlP settings
-let g:ctrlp_match_window = 'bottom,order:ttb'
-let g:ctrlp_switch_buffer = 0
-let g:ctrlp_working_path_mode = 0
-let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 " for syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
