@@ -3,11 +3,6 @@ set number
 set ruler
 set title
 set ai
-set cindent
-set sw=4
-set smartindent
-set ts=4
-set expandtab
 set laststatus=2
 
 set nocompatible
@@ -24,6 +19,7 @@ filetype indent on
 
 
 set nocompatible                " be iMproved, required
+filetype on                     " required
 filetype off                    " required
 
 " set the runtime path to include Vundle and initialize
@@ -91,7 +87,7 @@ set tabstop=4
 set softtabstop=4
 set smarttab expandtab
 set autoindent smartindent
-autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
+autocmd Filetype javascript,xml,html setlocal ts=2 sts=2 sw=2
 " UI
 set number ruler showmode
 set cursorline          " highlight current line
@@ -180,7 +176,7 @@ hi Title                cterm=none ctermbg=none     ctermfg=4       gui=none    
 " Syntax Highlighting
 " ----------------------------------------------------------------------------
 hi Keyword              cterm=none ctermbg=none ctermfg=10          gui=none        guifg=#D1FA71
-hi Comment              cterm=none ctermbg=none ctermfg=8           gui=none        guifg=#8F8F8F
+hi Comment              cterm=none ctermbg=none ctermfg=9           gui=none        guifg=#8F8F8F
 hi Delimiter            cterm=none ctermbg=none ctermfg=15          gui=none        guifg=#F7F7F7
 hi Identifier           cterm=none ctermbg=none ctermfg=12          gui=none        guifg=#96D9F1
 hi Structure            cterm=none ctermbg=none ctermfg=12          gui=none        guifg=#9DEEF2
