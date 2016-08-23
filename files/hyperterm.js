@@ -25,25 +25,25 @@ module.exports = {
     cursorShape: 'BLOCK',
 
     // Colors
-    foregroundColor: '#373b41',
-    backgroundColor: '#ffffff',
+    foregroundColor: '#d3d0c8',
+    backgroundColor: '#2d2d2d',
     colors: {
-      black:       '#1d1f21',
-      red:         '#cc342b',
-      green:       '#198844',
-      yellow:      '#fba922',
-      blue:        '#3971ed',
-      magenta:     '#a36ac7',
-      cyan:        '#3971ed',
-      white:       '#c5c8c6',
-      lightBlack:  '#969896',
-      lightRed:    '#cc342b',
-      lightGreen:  '#198844',
-      lightYellow: '#fba922',
-      lightBlue:   '#3971ed',
-      lightMagenta:'#a36ac7',
-      lightCyan:   '#3971ed',
-      lightWhite:  '#ffffff'
+      black:       '#2d2d2d',
+      red:         '#f2777a',
+      green:       '#99cc99',
+      yellow:      '#ffcc66',
+      blue:        '#6699cc',
+      magenta:     '#cc99cc',
+      cyan:        '#66cccc',
+      white:       '#d3d0c8',
+      lightBlack:  '#747369',
+      lightRed:    '#f2777a',
+      lightGreen:  '#99cc99',
+      lightYellow: '#ffcc66',
+      lightBlue:   '#6699cc',
+      lightMagenta:'#cc99cc',
+      lightCyan:   '#66cccc',
+      lightWhite:  '#f2f0ec'
     },
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
