@@ -1,12 +1,14 @@
 import os
 
+path = "files/"
+
 # HYPERTERM
 flag = ''
 while (flag is not 'y') and (flag is not 'n'):
     flag = raw_input("Copy configs for hyperterm? (y/n): ")
 
 if flag is "y":
-    os.system("cp hyperterm.js ~/.hyperterm.js")
+    os.system("cp " + path + "hyperterm.js ~/.hyperterm.js")
     print "Copying .hyperterm.j ...Complete"
 
 # BASH
@@ -21,17 +23,14 @@ if flag is "y":
 
     if flag is "y":
         print "Mac OS X"
-        os.system("cp bashrc.macosx ~/.bashrc")
+        os.system("cp " + path + "bashrc.macosx ~/.bashrc")
     elif flag == 'n':
         print "LINUX"
-        os.system("cp bashrc.linux ~/.bashrc")
+        os.system("cp " + path + "bashrc.linux ~/.bashrc")
     print "Copying .bashrc ...Complete"
 
-    os.system("cp bash_profile ~/.bash_profile")
+    os.system("cp " + path + "bash_profile ~/.bash_profile")
     print "Copying .bash_profile ...Complete"
-
-    os.system("source ~/.bashrc")
-    print "Sourced ~/.bashrc"
 
 # SCREEEN
 flag = ''
@@ -39,7 +38,7 @@ while (flag is not 'y') and (flag is not 'n'):
     flag = raw_input("Copy configs for screen? (y/n): ")
 
 if flag is "y":
-    os.system("cp screenrc ~/.screenrc")
+    os.system("cp " + path + "screenrc ~/.screenrc")
     print "Copying .screenrc ...Complete"
 
 # VIM
@@ -48,22 +47,5 @@ while (flag is not 'y') and (flag is not 'n'):
     flag = raw_input("Copy configs for vim? (y/n): ")
 
 if flag is "y":
-    os.system("cp vimrc ~/.vimrc")
+    os.system("cp " + path + "vimrc ~/.vimrc")
     print "Copying .vimrc ...Complete"
-
-# GIT
-flag = ''
-while (flag is not 'y') and (flag is not 'n'):
-    flag = raw_input("Configure git for me? (y/n): ")
-
-if flag is "y":
-    os.system("git config --global color.ui true")
-    print "git config --global color.ui true"
-    name = ''
-    name = raw_input("Type your name: ")
-    os.system("git config --global user.name \"" + name + "\"")
-    print "git config --global user.name \"" + name + "\""
-    addr = ''
-    addr = raw_input("Type your email address: ")
-    os.system("git config --global user.email " + addr)
-    print "git config --global user.email " + addr
