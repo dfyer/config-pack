@@ -1,6 +1,15 @@
 import os
 
-#if __name__ is '__main__':
+# HYPERTERM
+flag = ''
+while (flag is not 'y') and (flag is not 'n'):
+    flag = raw_input("Copy configs for hyperterm? (y/n): ")
+
+if flag is "y":
+    os.system("cp hyperterm.js ~/.hyperterm.js")
+    print "Copying .hyperterm.j ...Complete"
+
+# BASH
 flag = ''
 while (flag is not 'y') and (flag is not 'n'):
     flag = raw_input("Copy configs for bash? (y/n): ")
@@ -24,6 +33,7 @@ if flag is "y":
     os.system("source ~/.bashrc")
     print "Sourced ~/.bashrc"
 
+# SCREEEN
 flag = ''
 while (flag is not 'y') and (flag is not 'n'):
     flag = raw_input("Copy configs for screen? (y/n): ")
@@ -32,6 +42,7 @@ if flag is "y":
     os.system("cp screenrc ~/.screenrc")
     print "Copying .screenrc ...Complete"
 
+# VIM
 flag = ''
 while (flag is not 'y') and (flag is not 'n'):
     flag = raw_input("Copy configs for vim? (y/n): ")
@@ -40,6 +51,7 @@ if flag is "y":
     os.system("cp vimrc ~/.vimrc")
     print "Copying .vimrc ...Complete"
 
+# GIT
 flag = ''
 while (flag is not 'y') and (flag is not 'n'):
     flag = raw_input("Configure git for me? (y/n): ")
