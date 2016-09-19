@@ -15,6 +15,6 @@ alias vi='vim'
 alias gis='git status'
 alias gia='git add'
 alias gic='git commit'
-alias gil="git log --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s%Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gil="git log --color --pretty=format:'%Cblue%h%Creset -%C(yellow)%d%Creset %s%Ccyan(%cr) %C(magenta)<%an>%Creset' --abbrev-commit"
 alias amplxe-cl='/opt/intel/vtune_amplifier_xe_2013/bin64/amplxe-cl'
 export TERM=xterm-256color
