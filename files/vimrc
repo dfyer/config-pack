@@ -37,14 +37,16 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'a.vim'
 " :FixWhitespace
 Plugin 'bronson/vim-trailing-whitespace'
-" Vim plugin for the_silver_searcher, 'ag'
-Plugin 'rking/ag.vim'
 " Syntax checker
 Plugin 'scrooloose/syntastic'
 " Javascript support
-Plugin 'pangloss/vim-javascript'
+"Plugin 'pangloss/vim-javascript'
 " Scala support
-Plugin 'derekwyatt/vim-scala'
+"Plugin 'derekwyatt/vim-scala'
+" Jedi autocompletion
+Plugin 'davidhalter/jedi-vim'
+" Python Mode
+Plugin 'klen/python-mode'
 
 " All of your Plugins must be added before the following line
 call vundle#end()               " required
@@ -80,6 +82,18 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_cpp_checkers = ['cpplint']
 let g:syntastic_cpp_cpplint_exec = '~/NextDB/util/cpplint.py'
 :command S SyntasticToggleMode
+" for Jedi
+let g:jedi#auto_vim_configuration = 0
+"let g:jedi#use_tabs_not_buffers = 1
+"let g:jedi#use_splits_not_buffers = "left"
+let g:jedi#goto_command = "<leader>d"
+let g:jedi#goto_assignments_command = "<leader>g"
+let g:jedi#goto_definitions_command = ""
+let g:jedi#documentation_command = "K"
+let g:jedi#usages_command = "<leader>n"
+let g:jedi#rename_command = "<leader>r"
+"let g:jedi#completions_enabled = 0
+autocmd FileType python setlocal completeopt-=preview
 
 " Tabs, indent
 set shiftwidth=4
@@ -120,3 +134,5 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set writebackup
 
 syntax enable
+
+colo elflord
