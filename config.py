@@ -21,13 +21,13 @@ if __name__ == '__main__':
         else:
             bash_path += "bashrc.linux"
 
-        if os.path.exists('~/.bash_profile'):
-            with open('~/.bash_profile', 'at') as dest:
+        if os.path.exists('~/.bashrc'):
+            with open('~/.bashrc', 'at') as dest:
                 with open(bash_path, 'rt') as source:
                     for line in source:
                         dest.write(line)
         else:
-            os.system("cp " + bash_path + " ~/.bash_profile")
+            os.system("cp " + bash_path + " ~/.bashrc")
         print("...Complete")
 
     # SCREEEN
