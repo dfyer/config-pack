@@ -8,7 +8,7 @@ import os
 def ask(question):
     while True:
         answer = raw_input(question + " (y/n): ")
-        return True if answer.lower() is 'y' else False
+        return True if answer.lower() == 'y' else False
 
 if __name__ == '__main__':
     path = "files/"
@@ -17,9 +17,9 @@ if __name__ == '__main__':
     if ask("Copy configs for bash?"):
         bash_path = path
         if ask("Are you using Mac OS X?"):
-            bash_path += "bashrc.macosx ~/.bashrc"
+            bash_path += "bashrc.macosx"
         else:
-            bash_path += "bashrc.linux ~/.bashrc"
+            bash_path += "bashrc.linux"
 
         if os.path.exists('~/.bash_profile'):
             with open('~/.bash_profile', 'at') as dest:
