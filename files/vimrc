@@ -37,7 +37,7 @@ Plugin 'a.vim'
 " :FixWhitespace
 Plugin 'bronson/vim-trailing-whitespace'
 " Syntax checker
-Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/syntastic'
 " Javascript support
 "Plugin 'pangloss/vim-javascript'
 " Scala support
@@ -70,24 +70,24 @@ filetype plugin indent on       " required
 " set t_Co=256
 " alias for FixWhitespace
 :command F FixWhitespace
-" for syntastic
-let g:syntastic_stl_format = "[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]"
-set statusline=""
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-set statusline+=\ %F\ %m%h%r%=\ format=%{&ff},%{&fenc}\ syn=%Y\ [%l,%v]\ [%p%%\ of\ %L]
-let g:syntastic_always_populate_loc_list = 1
-"let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_cpp_checkers = ['cpplint']
-let g:syntastic_cpp_cpplint_exec = '~/NextDB/util/cpplint.py'
-"let g:syntastic_mode_map = {'mode': 'passive'}
-nnoremap - :Erros<CR>
-"nnoremap - :SyntasticCheck<CR>
-"nnoremap _ :SyntasticToggleMode<CR>
-":command S SyntasticToggleMode
+"" for syntastic
+"let g:syntastic_stl_format = "[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]"
+"set statusline=""
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+"set statusline+=\ %F\ %m%h%r%=\ format=%{&ff},%{&fenc}\ syn=%Y\ [%l,%v]\ [%p%%\ of\ %L]
+"let g:syntastic_always_populate_loc_list = 1
+""let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
+"let g:syntastic_cpp_checkers = ['cpplint']
+"let g:syntastic_cpp_cpplint_exec = '~/NextDB/util/cpplint.py'
+""let g:syntastic_mode_map = {'mode': 'passive'}
+"nnoremap - :Erros<CR>
+""nnoremap - :SyntasticCheck<CR>
+""nnoremap _ :SyntasticToggleMode<CR>
+"":command S SyntasticToggleMode
 " for Jedi
 let g:jedi#auto_vim_configuration = 0
 "let g:jedi#use_tabs_not_buffers = 1
