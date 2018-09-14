@@ -1,15 +1,12 @@
 #!/usr/bin/env python3
-from __future__ import print_function
 
 import os
 
-
 # Handler
 def ask(question):
-  return True
   while True:
-    #answer = raw_input(question + " (y/n): ")
-    return True if answer.lower() == 'y' else False
+    answer = input(question + " (y/n): ")
+    return True if answer.lower() is 'y' else False
 
 if __name__ == '__main__':
   path = "files/"
