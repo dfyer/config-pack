@@ -1,5 +1,6 @@
 
-# Setted up by hgpark's config-pack parse_git_branch () {
+# Setted up by hgpark's config-pack
+parse_git_branch () {
     while read -r branch; do
         [[ $branch = \** ]] && current_branch=${branch#* }
     done < <(git branch 2>/dev/null)
