@@ -51,7 +51,7 @@ if targets:
         backup_cmd = ["cp", dst, dst+".backup"]
         backup_cmd = " ".join(backup_cmd)
         print("\t" + backup_cmd, end='')
-        os.exec(backup_cmd)
+        os.system(backup_cmd)
         print("\t..backup complete!")
 
 # Copy
@@ -60,5 +60,5 @@ if targets:
     install_cmd = ["cp", targets[dst], dst]
     install_cmd = " ".join(install_cmd)
     print("\t" + install_cmd, end='')
-    os.exec(install_cmd)
+    os.system(install_cmd)
     print("\t..install complete!")
