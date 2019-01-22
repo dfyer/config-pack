@@ -46,6 +46,8 @@ Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'davidhalter/jedi-vim'
 " Python Mode
 "Plugin 'klen/python-mode'
+" Vue syntax upport
+Plugin 'posva/vim-vue'
 
 " All of your Plugins must be added before the following line
 call vundle#end()               " required
@@ -110,7 +112,7 @@ set tabstop=4
 set softtabstop=4
 set smarttab expandtab
 set autoindent smartindent
-autocmd Filetype python,javascript,xml,html setlocal ts=2 sts=2 sw=2
+autocmd Filetype javascript,xml,html,vue setlocal ts=2 sts=2 sw=2
 " UI
 set number ruler showmode
 "set cursorline          " highlight current line
