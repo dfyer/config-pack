@@ -22,7 +22,7 @@ SRC_BASE = "files/"
 
 def get_bashrc():
   if args.mac:
-    return SRC_BASE + "bashrc.macosx"
+    return SRC_BASE + "zshrc"
   else:
     return SRC_BASE + "bashrc.linux"
 

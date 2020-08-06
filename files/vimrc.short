@@ -1,0 +1,62 @@
+set hlsearch
+set number
+set ruler
+set title
+set ai
+set laststatus=2
+
+set nocompatible
+set ic
+set lbr
+
+filetype indent on
+
+set nocompatible                " be iMproved, required
+filetype on                     " required
+filetype off                    " required
+
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+set smarttab expandtab
+set autoindent smartindent
+autocmd Filetype javascript,xml,html,vue setlocal ts=2 sts=2 sw=2
+
+" UI
+set number ruler showmode
+"set cursorline          " highlight current line
+set scrolloff=1         " keep at least 1 lines above/below
+set wildmenu            " visual autocomplete for command menu
+set lazyredraw          " redraw only when we need to.
+set showmatch           " highlight matching [{()}]
+
+" searching
+"set incsearch           " search as characters are entered
+set hlsearch            " highlight matches
+set ignorecase smartcase " case-sensitive search only for UpperCASE
+set magic               " Allows pattern matching with special characters.
+
+" folding
+set foldenable
+set foldlevelstart=10   " open most folds by default
+set foldnestmax=10      " 10 nested fold max
+set foldmethod=marker
+
+" backup
+set backup
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set backupskip=/tmp/*,/private/tmp/*
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set writebackup
+
+" Syntax highlight style
+colo torte
+syntax enable
+syntax off
+
+" Switch for syntax highlight
+nnoremap E :if exists("g:syntax_on") <Bar>
+  \   syntax off <Bar>
+  \ else <Bar>
+  \   syntax enable <Bar>
+  \ endif <CR>
