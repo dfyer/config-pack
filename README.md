@@ -1,23 +1,27 @@
 # Configuration Pack v0.9.1
 
-Python 2.7 required. If you are using Python version 3.0 or above, use py3config.py 
-1. Copy the configuration files
-(.bashrc, .bash__profile, .screenrc, .vimrc)
 
-> $ python config.py
+1. Manually copy configuration files
 
-2. Setup Vundle
+For example:
+```
+cp files/zshrc ~/.zshrc
+cp files/tmux.conf ~/.tmux.conf
+cp files/vimrc ~/.vimrc
+```
 
-> $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+2. Install Vundle
 
-3. Open Vim, run :PluginInstall
+> git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-4. For vim-gitgutter, run below
+3. Open Vim, run `:PluginInstall`
 
-> cd /tmp && git clone git://github.com/airblade/vim-gitgutter.git
-or
-> git clone git://github.com/airblade/vim-gitgutter.git
-> cp -r vim-gitgutter/* ~/.vim/
+4. Install TPM (Tmux Plugin Manager)
+
+> git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+5. Open tmux session, install plugins with `C-a I`
+
 
 ### Additional Configuration
 

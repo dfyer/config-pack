@@ -90,3 +90,7 @@ nnoremap E :if exists("g:syntax_on") <Bar>
   \ else <Bar>
   \   syntax enable <Bar>
   \ endif <CR>
+
+" Increment with Ctrl-I
+nnoremap <C-i> <C-a>
+
