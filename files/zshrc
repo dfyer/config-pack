@@ -7,6 +7,12 @@
 # 프롬프트에서 명령어 치환을 가능하게 설정
 setopt PROMPT_SUBST
 
+# Virtual env name
+get_pyenv_virtualenv() {
+  local env=$(pyenv version-name 2>/dev/null)
+    [[ "$env" != "system" ]] && echo "($env)"
+    }
+
 # 현재 Git 브랜치 표시 함수
 parse_git_branch() {
   git rev-parse --is-inside-work-tree &>/dev/null || return
@@ -22,6 +28,7 @@ parse_git_branch() {
 autoload -U colors && colors
 #export PS1='%F{green}%n@local%f %F{blue}%~%f %F{yellow}$(parse_git_branch)%f %# '
 export PS1='%F{green}%n@local%f %F{blue}%~%f %F{yellow}$(parse_git_branch)%f %F{11}$%f '
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1 # Keep prompt in pyenv virtualenv
 
 # General
 alias tree='tree -C'
